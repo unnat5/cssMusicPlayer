@@ -86,8 +86,9 @@
 
 }
 
-@media screen and (max-width: 600px) {
-	.user-img{
+@media screen and (max-width: 750px) {
+	.user-img,.bell-icon{
+		margin: 10px;
 		display: none;
 	}
 }

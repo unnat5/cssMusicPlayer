@@ -1,0 +1,88 @@
+
+#header{
+		position: fixed;
+		height: 60px;
+		width: 100%;
+		/*background-color: blue;*/
+		display: flex;
+		flex-direction: row;
+		margin-top: -10px;
+		margin-left: -8px;
+		margin-right: 0px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
+
+	}
+
+#header-left-div{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#header-right-div{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.header-text{
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-weight: 800;
+	font-size: 150%;
+
+}
+.header-img{
+	width: 8%;
+	height: 55px;
+	min-width: 60px;
+	margin-left: 30px;
+	padding-top:3px;
+	max-width: 350px;
+	border-radius: 100%; 
+}
+
+#global-container{
+	display: flex;
+	flex-direction: row;
+
+}
+
+#main-left-container{
+	width: 75%;
+}
+#right-container{
+	width: 25%;
+}
+
+#search-bar{
+	height: 20px;
+	width: 80%;
+	max-width: 500px;
+	border-radius: 10px;
+	max-width: 300px;
+}
+.text-form{
+	width: 100%;
+}
+
+.search-icon{
+	position: relative;
+	right: -25px;
+	opacity: 0.5; 
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 15px;
+}
+.mic-icon{
+	position: relative;
+	opacity: 0.5;
+	left: -25px;
+}
+
+@media screen and (max-width: 600px) {
+	.user-img{
+		display: none;
+	}
+}

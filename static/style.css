@@ -80,9 +80,15 @@
 	opacity: 0.5;
 	left: -25px;
 }
+.bell-icon{
+	margin-left: 15%;
+	color: #ff5733;
+
+}
 
 @media screen and (max-width: 600px) {
 	.user-img{
 		display: none;
 	}
 }
+

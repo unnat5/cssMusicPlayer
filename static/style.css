@@ -11,6 +11,7 @@
 		margin-right: 0px;
 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 		background-image: linear-gradient(to right, orange , blue);  
+		z-index: 100;
 
 	}
 
@@ -63,6 +64,7 @@
 	max-width: 500px;
 	border-radius: 10px;
 	max-width: 300px;
+	/*padding-left: 25px;*/
 }
 .text-form{
 	width: 100%;
@@ -87,12 +89,7 @@
 
 }
 
-@media screen and (max-width: 750px) {
-	.user-img,.bell-icon{
-		margin: 10px;
-		display: none;
-	}
-}
+
 /*Nav bar styling completed*/
 #global-container{
 	display: flex;
@@ -102,6 +99,7 @@
 	/*height: 100px;*/
 	width: 65%;
 	/*background-color: orange;*/
+	flex-direction: column;
 
 
 }
@@ -111,6 +109,7 @@
 	width: 35%;
 	/*background-color: blue;*/
 	justify-content: flex-start;
+	flex-direction: column;
 
 }
 #highlights{
@@ -137,7 +136,8 @@
 	position: relative;
 	/*right: 20px;*/
 	height: 250px;
-	width: 33%;
+	max-height: 250px !important;
+	width: 45%;
 	z-index: 5;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -158,3 +158,96 @@
 	height: 275px;
 	transition-timing-function: ease-in-out;
 }
+
+/*Latest release container*/
+#latest-release-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+#song-container{
+	display: flex;
+	width: 45%;
+	/*justify-content: space-around;*/
+	margin: 5px;
+	
+}
+
+#song-container:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#song-left-container{
+	display: flex;
+	width: 35%;
+
+}
+
+#song-right-container{
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+}
+
+#button-container{
+	display: flex;
+	flex-direction: row-reverse;
+	height: 25%;
+
+}
+#button-container span{
+	margin-top: -15px;
+	font-size: 20px; 
+}
+
+
+#song-name{
+	height: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+#song-name-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#song-date{
+	height: 50%;
+	display: flex;
+	align-items: center;
+	/*margin: 15px;*/
+}
+
+
+/*Right aside */
+	
+
+
+/*end*/
+
+
+@media screen and (max-width: 1100px) {
+	.user-img,.bell-icon{
+		margin: 10px;
+		display: none;
+	}
+	#main-right-container{
+		display: none;
+		width: 0;
+	}
+	#global-container{
+		display: flex;
+		justify-content: center;
+	}
+	#main-left-container{
+		width: 100%;
+	}
+	#highlights{
+		margin-left: -15%;
+	}
+}
+
+

@@ -1,4 +1,6 @@
-
+body{
+	min-width: 1020px;
+}
 #header{
 		position: fixed;
 		height: 60px;
@@ -222,6 +224,52 @@
 	/*margin: 15px;*/
 }
 
+/*Popular Artist*/
+.popular-artist-container{
+	display: flex;
+	flex-basis: 100%;
+	max-height: 210px;
+	/*background-color:  grey;*/
+	overflow-x: auto;
+	align-items: center;
+
+
+}
+
+.popular-artist-box{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	/*width:200px;*/
+	min-width: 15.5%;
+
+}
+
+.img-box{
+	/*background-color:orange;*/
+	width:  100%;
+
+}
+.img-box img{
+	border-radius: 50%;
+	height: 150px;
+	opacity: 0.9;
+	transition: all 0.2s ease-in-out;
+}
+
+.img-box img:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transform: scale(1.1);
+	opacity: 1;
+}
+.name-box{
+	/*background-color: blue;*/
+	display: flex;
+	width:  100%;
+	justify-content: center;
+
+}
+/*END*/
 
 /*Right aside */
 #right-header-container{
@@ -247,6 +295,7 @@
 	font-size: 1.1em;
 	font-family: sans-serif;
 	width: 5%;
+	margin: 5px;
 }
 
 #queue-img{

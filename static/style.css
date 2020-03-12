@@ -341,8 +341,19 @@ body{
 	text-align: center;
 	color: #FF1493;
 }
+/*END*/
 
 
+/*Playlist*/
+.playlist div{
+	width: 35%;
+	height: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.playlist img{
+	border-radius: 5px !important;
+}
 
 /*Right aside */
 #right-header-container{

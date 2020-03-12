@@ -157,7 +157,8 @@ body{
 
 #highlights img:hover{
 	z-index: 10;
-	height: 275px;
+	/*height: 275px;*/
+	transform: scaleY(1.2);
 	transition-timing-function: ease-in-out;
 }
 
@@ -282,10 +283,10 @@ body{
 	visibility: visible;
 }
 
-.img-box:hover img{
+.img-box:hover img, .radio-single-container:hover img{
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	transform: scale(1.1);
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 
@@ -302,6 +303,46 @@ body{
 
 
 /*END*/
+
+
+
+/*Radio Statio*/
+
+
+.radio-station{
+	/*background-color: grey;*/
+	display: flex;
+	align-items: center;
+	
+}
+
+.radio-single-container{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20%;
+	height: 100%;
+	/*background-color: orange;*/
+}
+
+.radio-station .radio-single-container img{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 90%;
+	border-radius: 50%;
+	height: 75%
+}
+
+.radio-station .radio-single-container span{
+	position: absolute;
+	width: 100%;
+	/*background-color: blue;*/
+	text-align: center;
+	color: #FF1493;
+}
+
+
 
 /*Right aside */
 #right-header-container{

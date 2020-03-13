@@ -45,7 +45,6 @@ body{
 	margin-left: 30px;
 	padding-top:3px;
 	max-width: 350px;
-	border-radius: 100%; 
 }
 
 #global-container{
@@ -564,6 +563,31 @@ body{
 	margin: 2px;
 }
 /*End*/
+
+/**/
+
+.artist-img{
+	max-height: 100% !important;
+
+}
+
+.artist-highlight{
+	display: flex;
+
+	height: 300px;
+}
+
+
+
+.artist-highlight-right-div{
+	display: flex;
+	flex-direction: column;
+}
+
+.artist-highlight:hover{
+	box-shadow: 0 10px 20px rgba(199,21,133,1), 0 10px 20px rgba(199,21,133,1);
+}
+/**/
 
 
 #queue-song-container:hover{
